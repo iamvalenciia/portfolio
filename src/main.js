@@ -1,24 +1,32 @@
-import "./style.css";
-import javascriptLogo from "./javascript.svg";
-import viteLogo from "/public/vite.svg";
-import { setupCounter } from "./counter.js";
+import { projects } from "./data.js";
+import renderCarousel from "./render-carousel.js";
+import renderMainContent from "./render-main-content.js";
 
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+function initializeApp() {
+  const app = document.querySelector("#app");
+
+  // Initial render with first project
+  app.innerHTML = `
+    <div class="app-container">
+      <div class="main-content">
+        ${renderMainContent(projects[0])}
+      </div>
+      ${renderCarousel()}
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
+  `;
 
-setupCounter(document.querySelector("#counter"));
+  // Add event listeners to carousel items
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  carouselItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const projectId = parseInt(item.getAttribute("data-project-id"));
+      const selectedProject = projects.find((p) => p.id === projectId);
+
+      // Update main content when carousel item is clicked
+      document.querySelector(".main-content").innerHTML =
+        renderMainContent(selectedProject);
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initializeApp);

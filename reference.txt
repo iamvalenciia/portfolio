@@ -1,0 +1,23 @@
+GSAP ScrambleText
+// https://codepen.io/search/pensq=GSAP+ScrambleText
+
+// background animation
+https://codepen.io/cobra_winfrey/pen/ogvpYwv
+
+GSAP LIBRARY
+https://gsap.com/demos/?page=1
+
+https://codepen.io/cobra_winfrey/pen/ogvpYwv
+
+// WHEN HOVER THE MOUSE Use Flip to seamlessly transition between two states in any DOM structure.
+https://gsap.com/ui/
+
+// include 3 real projects
+// fix css when display each of the projec
+// provide two images, one for main and one for the carrousel
+
+// check requirements projects
+
+future features:
+// animation whe hover the images of the carrousel
+// user can navigated trough the project using the keyboard using arrows left & right
