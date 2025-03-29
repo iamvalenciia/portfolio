@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -8,56 +9,67 @@ body {
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
-.main-content {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 30px;
+/* Project Details */
+.project-details {
+  padding: 0 20px 20px 20px;
 }
 
-.project-details .project-header {
+/* Project Header */
+.project-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.project-details .project-header h1 {
+.project-header h1 {
   color: #333;
   margin-bottom: 10px;
 }
 
-.project-details .project-header .short-description {
+.project-header .short-description {
   color: #666;
   font-style: italic;
 }
 
+/* Project Content Layout */
 .project-content {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .project-image img {
-  max-width: 500px;
-  max-height: 200px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Info */
+.project-info {
+  flex: 1 1 55%;
+  text-align: left;
 }
 
 .project-info h2 {
   color: #444;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.project-info {
-  display: flex;
-  align-self: center;
-  text-align: center;
-}
-
+/* Technologies */
 .technologies ul {
   display: flex;
   flex-wrap: wrap;
@@ -67,17 +79,23 @@ body {
 }
 
 .technologies li {
-  background-color: #f0f0f0;
-  padding: 5px 10px;
+  background-color: #f0f0f0; /* Light gray */
+  color: #555; /* Darker gray for contrast */
+  padding: 8px 14px;
   border-radius: 20px;
   font-size: 0.9em;
+  font-weight: 600; /* Slightly bolder for readability */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd; /* Subtle border for elegance */
 }
 
+/* GitHub Link */
 .github-link {
   display: inline-block;
-  margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #000; /* Black color */
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -85,27 +103,50 @@ body {
 }
 
 .github-link:hover {
-  background-color: #0056b3;
+  background-color: #333;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .project-info {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+/* Carousel */
 .carousel-container {
   overflow: hidden;
 }
 
 .carousel {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  overflow-x: auto;
-  padding: 20px 0;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  justify-content: center;
+  padding: 20px 20px 0 20px;
 }
 
 .carousel-item {
-  flex: 0 0 300px;
-  scroll-snap-align: center;
-  cursor: pointer;
-  transition: transform 0.3s;
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 220px;
+  max-width: 100px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .carousel-item:hover {
@@ -114,7 +155,7 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -132,4 +173,17 @@ body {
 .carousel-caption p {
   color: #666;
   font-size: 0.9em;
+}
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 1 1 100%;
+  }
 }
