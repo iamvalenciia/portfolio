@@ -27,11 +27,6 @@ export default function renderMainContent(project) {
                 ? `<a href="${project.githubLink}" target="_blank" class="github-link">View on GitHub</a>`
                 : ""
             }
-            ${
-              project.id === 1
-                ? `<a href="/about.html" class="github-link" class="live-link">Contac Information</a>`
-                : ""
-            }
           </div>
         </div>
       </div>
