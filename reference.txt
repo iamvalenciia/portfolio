@@ -21,3 +21,7 @@ https://gsap.com/ui/
 future features:
 // animation whe hover the images of the carrousel
 // user can navigated trough the project using the keyboard using arrows left & right
+
+/./////////////////// Complete project////////////////
+/// missing to complete the deplo
+// missing to add the link in the readme file

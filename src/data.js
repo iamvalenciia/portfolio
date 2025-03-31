@@ -7,7 +7,7 @@ export const projects = [
     fullDescription:
       "I’m a software developer and data steward passionate about creating efficient digital solutions. With expertise in data validation, automation, and full-stack development, I have collaborated with global clients such as Paramount, Sony, and Intel.",
     technologies: ["JavaScript", "Python", "Flutter", "Supabase", "Jira", "C#"],
-    imageUrl: "/public/images/profile2.jpg",
+    imageUrl: "/images/profile2.jpg",
     githubLink: "https://github.com/iamvalenciia",
   },
   {
@@ -18,7 +18,7 @@ export const projects = [
     fullDescription:
       "This Chrome extension allows users to highlight a word with the mouse and press the 'S' key to open a list of predefined messages for quick copying. These predefined messages assist in my daily work as a data steward at Graphite.",
     technologies: ["JavaScript"],
-    imageUrl: "/public/images/chrome.png",
+    imageUrl: "/images/chrome.png",
     githubLink: "https://github.com/iamvalenciia",
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     fullDescription:
       "A collaborative assistance app where users can offer or request help in various areas. The app includes geolocation features to facilitate connections.",
     technologies: ["Supabase", "Flutter"],
-    imageUrl: "/public/images/ministrar.png",
+    imageUrl: "/images/ministrar.png",
     githubLink: "https://github.com/iamvalenciia",
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     fullDescription:
       "I developed a Python bot using Tweepy for data scraping. Currently, it runs manually, but I am actively working on deploying it on AWS EC2. The bot retrieves real-time information on monkeypox cases worldwide, categorizes them by country, and tweets the results.",
     technologies: ["Python"],
-    imageUrl: "/public/images/bot.png",
+    imageUrl: "/images/bot.png",
     githubLink: "https://github.com/iamvalenciia/twitter-bot",
   },
 ];
