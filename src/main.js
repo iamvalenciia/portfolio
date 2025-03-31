@@ -2,10 +2,14 @@ import { projects } from "./data.js";
 import renderCarousel from "./render-carousel.js";
 import renderMainContent from "./render-main-content.js";
 
+/**
+ * Initializes the application by rendering the main content and carousel,
+ * and sets up event listeners for user interactions.
+ */
+
 function initializeApp() {
   const app = document.querySelector("#app");
 
-  // Initial render with first project
   app.innerHTML = `
     <div class="app-container">
       <div class="main-content">
@@ -15,7 +19,6 @@ function initializeApp() {
     </div>
   `;
 
-  // Add event listeners to carousel items
   const carouselItems = document.querySelectorAll(".carousel-item");
   carouselItems.forEach((item) => {
     item.addEventListener("click", () => {

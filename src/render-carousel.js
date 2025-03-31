@@ -1,4 +1,11 @@
 import { projects } from "./data.js";
+
+/**
+ * Renders a carousel component displaying project information.
+ *
+ * @returns {string} - The HTML string for the carousel component.
+ */
+
 export default function renderCarousel() {
   return `
     <div class="carousel-container">

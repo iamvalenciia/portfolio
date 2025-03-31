@@ -1,3 +1,17 @@
+/**
+ * Generates the main content section for a project, displaying its details.
+ *
+ * @param {Object} project - The project object containing its details.
+ * @param {string} project.title - The title of the project.
+ * @param {string} project.shortDescription - A brief description of the project.
+ * @param {string} project.imageUrl - URL of the project's main image.
+ * @param {string} project.fullDescription - A detailed description of the project.
+ * @param {string[]} [project.technologies] - An optional array of technologies used in the project.
+ * @param {string} [project.githubLink] - An optional GitHub repository link for the project.
+ *
+ * @returns {string} - The HTML string for the main project content.
+ */
+
 export default function renderMainContent(project) {
   return `
       <div class="project-details">
