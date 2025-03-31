@@ -6,7 +6,7 @@ Welcome to my portfolio! This project showcases my skills as a software develope
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them. Also describe what is dynamically created on each page.}
+The project is a single-page application that does not use React or any framework. Instead, it dynamically updates the displayed content based on the selected information. It serves as a simple yet effective portfolio showcasing my projects.
 
 # Development Environment
 
