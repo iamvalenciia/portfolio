@@ -15,6 +15,7 @@ The project is a single-page application that does not use React or any framewor
 # Useful Websites
 
 - [JavaScript Docs](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Youtube - Video](https://youtu.be/FLQrKBCMWnY)
 
 # Future Work
 
